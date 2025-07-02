@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body bgcolor=pink>
+
+  <h2>Registration Form</h2>
+
+  <form action="#" method="post">
+    <label for="fname"><font color=red>First Name:</label><br>
+    <input type="text" id="fname" name="fname"  pattern="[A-Za-z]+" tittle="invalid"  placeholder="enter your first name" required><br><br>
+
+    <label for="lname"> Last Name:</label><br>
+    <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" tittle="invalid"  placeholder="enter your last name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"  placeholder="enter your email address" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\S]{6,}$"  tittle="invalid"  placeholder="enter  password" required><br><br>
+ <lable for="number">Phone Number:</lable><br>
+<input type="number" id="password" name="password" pattern="\d{10}" tittle="invalid"  placeholder="enter your phone number" required><br><br>
+<label for="date of birth">date of birth:</label><br>
+<input type="date" required><br><br>
+    <lable for="state">select your state:</lable><br>
+<select name="state" id="state" required>
+<option >select</option>
+<option value="karnataka">karnataka</option>
+<option value="kerala">kerala</option>
+<option value="tamil nadu">Tamil nadu</option>
+<option value="punjab">Punjab</option>
+<option value="Bihar">Bihar</option>
+</select><br><br>
+
+<input type="checkbox" required>
+<label for="i agree">I agree with this</label><br><br>
+
+  <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
+
+
